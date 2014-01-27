@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Otsikkorjaaja",
-	"version": "0.0.7",
-	"description": "Korjaa uutisia maanläheisemmäksi. Ehkä.",
+	"name": "Uutiskorjaaja",
+	"version": "0.0.8",
+	"description": "Korjaa uutisia todenmukaisemmaksi. Toisinaan.",
 	"permissions": [
 	  "storage"
 	],
@@ -31,7 +31,7 @@
     "browser_action":
     {
     	"default_icon":  "images/icon19-on.png",
-		"default_title": "Älä korjaa"
+		"default_title": "Pois päältä"
 	},
   "content_security_policy": "default-src 'none'; script-src 'self'",
   "options_page": "options.html"
