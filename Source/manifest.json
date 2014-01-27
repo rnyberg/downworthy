@@ -1,18 +1,18 @@
 {
 	"manifest_version": 2,
-	"name": "Downworthy",
+	"name": "Otsikkorjaaja",
 	"version": "0.0.7",
-	"description": "Replaces hyberbolic headlines from bombastic viral websites with a slightly more realistic version.",
+	"description": "Korjaa uutisia maanläheisemmäksi. Ehkä.",
 	"permissions": [
 	  "storage"
 	],
-	
-	"background": 
+
+	"background":
 	{
     	"page": "background.html"
 	},
-	
-	"content_scripts": 
+
+	"content_scripts":
 	[
 		{
 			"matches": ["*://*/*"],
@@ -20,21 +20,21 @@
 			"run_at": "document_end"
 		}
 	],
-	
-	"icons": 
-	{ 
+
+	"icons":
+	{
 		"16":  "images/icon16.png",
         "48":  "images/icon48.png",
         "128": "images/icon128.png"
     },
-    
-    "browser_action": 
+
+    "browser_action":
     {
     	"default_icon":  "images/icon19-on.png",
-		"default_title": "Toggle Downworthy"
+		"default_title": "Älä korjaa"
 	},
   "content_security_policy": "default-src 'none'; script-src 'self'",
   "options_page": "options.html"
-	
+
 }
 
